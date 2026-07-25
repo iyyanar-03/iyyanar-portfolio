@@ -364,8 +364,8 @@ section{padding:88px 6%;}
 <section id="projects" style="background:rgba(255,255,255,0.01);border-top:1px solid rgba(212,196,106,0.07);">
   <div class="section-reveal">
     <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">Selected Work</span><div class="eyebrow-line"></div></div>
-    <h2 class="sec-title">Featured Projects</h2>
-    <p class="sec-sub">AI-powered healthcare solutions, signal processing systems, and full-stack health IT platforms.</p>
+    <h2 class="sec-title">Projects & Innovation</h2>
+    <p class="sec-sub">Transforming healthcare challenges into practical engineering solutions through medical technology.</p>
     <div id="projects-grid" class="projects-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:36px;"></div>
   </div>
 </section>
@@ -590,12 +590,10 @@ cats.forEach(cat=>{
 
 /* ── PROJECTS ── */
 const PROJECTS=[
-  {title:'Virtual Stethoscope',sub:'Heart Sound Classification',desc:'AI-powered digital stethoscope using CNN for classifying normal/abnormal heart sounds (S1, S2, murmurs) from PCG signals with 94% accuracy.',tech:['Python','TensorFlow','CNN','Librosa','DSP'],c:'#D4C46A',icon:'stethoscope'},
-  {title:'ECG/EEG Signal Filtering',sub:'Biomedical Signal Processing',desc:'Real-time filtering of ECG and EEG biomedical signals using adaptive FIR/IIR filters and wavelet transforms for clinical-grade noise removal.',tech:['MATLAB','Python','SciPy','Wavelet','DSP'],c:'#A8E6A1',icon:'activity'},
-  {title:'Driving Behavior Analysis',sub:'Risk Profiling System',desc:'ML-based system analyzing IMU sensor data to classify driving behaviour and predict accident risk in real-time using ensemble models.',tech:['Python','Scikit-learn','Pandas','IoT','ML'],c:'#D4C46A',icon:'car'},
-  {title:'EV Battery Forecasting',sub:'Degradation Prediction',desc:'Predictive model for EV battery State-of-Health estimation using LSTM neural networks trained on NASA battery aging datasets.',tech:['Python','LSTM','Time Series','TensorFlow'],c:'#A8E6A1',icon:'battery'},
+  {title:'Non-Contact Vital Sign Monitoring',sub:'mmWave Radar-Based HR & RR Monitoring',desc:'Developed an mmWave radar-based contactless system for real-time heart rate and respiration rate monitoring using chest motion and signal processing.',tech:['mmWave Radar','MATLAB','Signal Processing','FFT','HR/RR'],c:'#D4C46A',icon:'activity'},
+  {title:'Colorectal Polyp Segmentation',sub:'Deep Learning-Based Medical Image Segmentation',desc:'Developed a U-Net-based system for automated colorectal polyp detection and segmentation using the Kvasir-SEG dataset with Dice + BCE hybrid loss.',tech:['Python','U-Net','Deep Learning','Kvasir-SEG','Image Segmentation'],c:'#A8E6A1',icon:'scan'},
   {title:'Thyroid Nodule Detection',sub:'Medical Image Segmentation',desc:'Explainable U-Net (ResNet34) deep learning system for automated thyroid nodule segmentation in ultrasound images with Grad-CAM explainability.',tech:['PyTorch','U-Net','ResNet34','OpenCV','DICOM'],c:'#D4C46A',icon:'scan'},
-  {title:'Hospital Management System',sub:'Full-Stack Healthcare App',desc:'Full-stack hospital management platform with patient EHR records, appointment scheduling, and FHIR-compliant API integration.',tech:['SQL','Python','FHIR','HL7','Flask'],c:'#A8E6A1',icon:'building'},
+  {title:'Contactless Patient Monitoring',sub:'PIR & Temperature Sensor-Based Monitoring',desc:'Developed an Arduino-based contactless system for real-time patient motion and temperature monitoring with automated alerts for abnormal conditions.',tech:['Arduino UNO','PIR Sensor','LM35','Embedded Systems','Sensors'],c:'#D4C46A',icon:'thermometer'},
 ];
 const iconSVG={
   stethoscope:`<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>`,
