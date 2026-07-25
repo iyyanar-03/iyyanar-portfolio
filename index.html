@@ -385,8 +385,8 @@ section{padding:88px 6%;}
 <section id="experience">
   <div class="section-reveal">
     <div class="eyebrow"><div class="eyebrow-line"></div><span class="eyebrow-text">Experience</span><div class="eyebrow-line"></div></div>
-    <h2 class="sec-title">Leadership &amp; Responsibilities</h2>
-    <p class="sec-sub">Active contributor across biomedical, IEEE, and IETE student chapters at PSG College of Technology.</p>
+    <h2 class="sec-title">Internships &amp; Leadership-Responsibilities</h2>
+    <p class="sec-sub">Building practical experience through industry internships, technical contributions, and leadership roles across engineering and professional communities.</p>
     <div style="position:relative;padding-left:20px;margin-top:36px;" id="timeline"></div>
   </div>
 </section>
@@ -593,7 +593,7 @@ const PROJECTS=[
   {title:'Non-Contact Vital Sign Monitoring',sub:'mmWave Radar-Based HR & RR Monitoring',desc:'Developed an mmWave radar-based contactless system for real-time heart rate and respiration rate monitoring using chest motion and signal processing.',tech:['mmWave Radar','MATLAB','Signal Processing','FFT','HR/RR'],c:'#D4C46A',icon:'activity'},
   {title:'Colorectal Polyp Segmentation',sub:'Deep Learning-Based Medical Image Segmentation',desc:'Developed a U-Net-based system for automated colorectal polyp detection and segmentation using the Kvasir-SEG dataset with Dice + BCE hybrid loss.',tech:['Python','U-Net','Deep Learning','Kvasir-SEG','Image Segmentation'],c:'#A8E6A1',icon:'scan'},
   {title:'Thyroid Nodule Detection',sub:'Medical Image Segmentation',desc:'Explainable U-Net (ResNet34) deep learning system for automated thyroid nodule segmentation in ultrasound images with Grad-CAM explainability.',tech:['PyTorch','U-Net','ResNet34','OpenCV','DICOM'],c:'#D4C46A',icon:'scan'},
-  {title:'Contactless Patient Monitoring',sub:'PIR & Temperature Sensor-Based Monitoring',desc:'Developed an Arduino-based contactless system for real-time patient motion and temperature monitoring with automated alerts for abnormal conditions.',tech:['Arduino UNO','PIR Sensor','LM35','Embedded Systems','Sensors'],c:'#D4C46A',icon:'thermometer'},
+  {title:'Contactless Patient Monitoring',sub:'PIR & Temperature Sensor-Based Monitoring',desc:'Developed an Arduino-based contactless system for real-time patient motion and temperature monitoring with automated alerts for abnormal conditions.',tech:['Arduino UNO','PIR Sensor','LM35','Embedded Systems','Sensors'],c:'#D4C46A',icon:'activity'},
 ];
 const iconSVG={
   stethoscope:`<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/><circle cx="20" cy="10" r="2"/></svg>`,
@@ -634,11 +634,11 @@ PROJECTS.forEach(p=>{
 
 /* ── STATS ── */
 const STATS=[
-  {label:'Projects Completed',val:6,suf:'',icon:'briefcase'},
-  {label:'Certifications',val:5,suf:'',icon:'award'},
-  {label:'GitHub Repositories',val:10,suf:'+',icon:'github'},
-  {label:'CGPA',val:8.13,suf:'',icon:'star'},
-  {label:'Hackathons',val:3,suf:'+',icon:'zap'},
+  {label:'Projects Completed',val:4,suf:'',icon:'briefcase'},
+  {label:'Certifications',val:7,suf:'',icon:'award'},
+  {label:'GitHub Repositories',val:6,suf:'+',icon:'github'},
+  {label:'CGPA',val:8.0,suf:'',icon:'star'},
+  {label:'Hackathons',val:1,suf:'+',icon:'zap'},
 ];
 const statIcons={
   briefcase:`<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#D4C46A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>`,
@@ -682,10 +682,12 @@ counterObs.observe(document.getElementById('stats-grid').parentElement.parentEle
 
 /* ── TIMELINE ── */
 const EXP=[
-  {role:'Design Team Member',org:'Biomedical Engineering Association (BMEA)',place:'PSG College of Technology, Coimbatore',period:'2023 – Present',type:'Leadership',c:'#D4C46A',bullets:['Designed promotional materials for technical events','Led visual communication for annual BMEA symposium','Coordinated with IEEE for joint event design']},
-  {role:'Design Team Member',org:'IEEE Students Chapter 12951',place:'PSG College of Technology, Coimbatore',period:'2023 – Present',type:'Leadership',c:'#A8E6A1',bullets:['Created digital and print media for IEEE events','Managed social media design for technical workshops','Collaborated on national-level IEEE competitions']},
-  {role:'Publicity Team Member',org:"IETE Students' Chapter",place:'PSG Technology',period:'2024 – Present',type:'Volunteer',c:'#D4C46A',bullets:['Handled outreach and publicity for IETE events','Designed newsletters and promotional banners','Coordinated media coverage for technical seminars']},
-  {role:'Placement Representative',org:'Department of Biomedical Engineering',place:'PSG College of Technology',period:'2024 – Present',type:'Academic',c:'#A8E6A1',bullets:['Liaison between students and placement cell','Coordinated with 10+ companies for campus recruitment','Managed student placement database and records']},
+  {role:'Biomedical Engineering Intern',org:'Medex Technologies Pvt. Ltd.',place:'Coimbatore, Tamil Nadu',period:'18 May 2026 – 20 June 2026',type:'Internship',c:'#D4C46A',bullets:['Gained hands-on experience in anaesthesia machine assembly and medical device hardware integration','Designed PCBs using Altium Designer and worked on component selection, soldering, and desoldering','Performed PCB testing and quality checks while gaining exposure to the medical device development process']},
+  {role:'Biomedical Engineer Trainee',org:'Popular Nursing Home',place:'Bangalore, Karnataka',period:'8 Dec 2026 – 13 Dec 2026',type:'Training',c:'#A8E6A1',bullets:['Assisted with biomedical equipment rounds and gained exposure to device troubleshooting','Developed practical understanding of biomedical equipment used in patient care','Observed laparoscopic surgical procedures and clinical equipment workflows']},
+  {role:'Design Team Lead',org:'Biomedical Engineering Association (BMEA)',place:'PSG College of Technology, Coimbatore',period:'2023 – 2025',type:'Head',c:'#D4C46A',bullets:['Designed promotional materials for technical events','Led visual communication for annual BMEA symposium','Coordinated with IEEE for joint event design']},
+  {role:'Design Team Lead',org:'IEEE Students Chapter 12951',place:'PSG College of Technology, Coimbatore',period:'2023 – Present',type:'Head',c:'#A8E6A1',bullets:['Created digital and print media for IEEE events','Managed social media design for technical workshops','Collaborated on national-level IEEE competitions']},
+  {role:'Publicity Team Member',org:"IETE Students' Chapter",place:'PSG Technology',period:'2023',type:'Member',c:'#D4C46A',bullets:['Handled outreach and publicity for IETE events','Designed newsletters and promotional banners','Coordinated media coverage for technical seminars']},
+  {role:'Placement Representative',org:'Department of Biomedical Engineering',place:'PSG College of Technology',period:'2023 – Present',type:'Academic',c:'#A8E6A1',bullets:['Liaison between students and placement cell','Coordinated with 10+ companies for campus recruitment','Managed student placement database and records']},
 ];
 const tl=document.getElementById('timeline');
 tl.innerHTML=`<div class="tl-line"></div>`;
@@ -716,11 +718,15 @@ EXP.forEach((ex,i)=>{
 
 /* ── CERTIFICATIONS ── */
 const CERTS=[
-  {name:'Java & JavaScript',issuer:'Certification Program',year:'2024',c:'#D4C46A',icon:'terminal'},
   {name:'MATLAB Onramp',issuer:'MathWorks',year:'2024',c:'#A8E6A1',icon:'monitor'},
   {name:'Image Processing Onramp',issuer:'MathWorks',year:'2024',c:'#D4C46A',icon:'layers'},
-  {name:'Introduction to Deep Learning',issuer:'MathWorks',year:'2024',c:'#A8E6A1',icon:'brain'},
+  {name:'Medical Image Processing',issuer:'Coursera',year:'2024',c:'#A8E6A1',icon:'layers'},
+  {name:'PCB Basic Design Course',issuer:'Altium Education',year:'2024',c:'#D4C46A',icon:'layers'},
+  {name:'Introduction to Deep Learning',issuer:'GUVI',year:'2024',c:'#A8E6A1',icon:'brain'},
   {name:'AI-Powered Embedded Systems',issuer:'Workshop Certificate',year:'2024',c:'#D4C46A',icon:'cpu'},
+  {name:'Product Prototyping for Industry Applications',issuer:'Workshop Certificate',year:'2024',c:'#A8E6A1',icon:'cpu'},
+  {name:'Java & JavaScript',issuer:'Simplilearn',year:'2024',c:'#D4C46A',icon:'terminal'},
+ 
 ];
 const certIcons={
   terminal:`<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>`,
