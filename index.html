@@ -280,14 +280,21 @@ section{padding:88px 6%;}
       <div class="glass" style="padding:28px;text-align:center;animation:float-up 5s ease-in-out infinite;">
         <div style="position:relative;display:inline-block;margin-bottom:18px;">
           <!-- Profile Photo: replace 'iyyanar_photo.jpg' with your actual photo filename -->
-          <div id="profile-photo-wrap" style="width:120px;height:120px;border-radius:50%;margin:0 auto;position:relative;overflow:hidden;border:3px solid rgba(212,196,106,0.5);box-shadow:0 0 28px rgba(212,196,106,0.35),0 0 60px rgba(212,196,106,0.1);animation:glow-pulse 3s ease infinite;">
-            <img id="profile-img" src="iyyanar_03.jpg" alt="Iyyanar S"
-              style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"
-              onerror="this.style.display='none';document.getElementById('profile-fallback').style.display='none';">
-            <div id="profile-fallback" style="display:flex;width:100%;height:100%;background:linear-gradient(135deg,#D4C46A,#8A7430);align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:32px;color:#0A0A0A;position:absolute;top:0;left:0;">IS</div>
-          </div>
-          <div style="position:absolute;bottom:4px;right:4px;width:20px;height:20px;border-radius:50%;background:#A8E6A1;border:2px solid #0A0A0A;animation:green-pulse 2s infinite;z-index:2;"></div>
-        </div>
+          <div id="profile-photo-wrap"
+  style="width:120px;height:120px;border-radius:50%;margin:0 auto;position:relative;overflow:hidden;border:3px solid rgba(212,196,106,0.5);box-shadow:0 0 28px rgba(212,196,106,0.35),0 0 60px rgba(212,196,106,0.1);animation:glow-pulse 3s ease infinite;">
+
+  <img id="profile-img"
+    src="iyyanar_03.jpg"
+    alt="Iyyanar S"
+    style="width:100%;height:100%;object-fit:cover;object-position:center;display:block;"
+    onerror="this.style.display='none';document.getElementById('profile-fallback').style.display='flex';">
+
+  <div id="profile-fallback"
+    style="display:none;width:100%;height:100%;background:linear-gradient(135deg,#D4C46A,#8A7430);align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:32px;color:#0A0A0A;position:absolute;top:0;left:0;">
+    IS
+  </div>
+
+</div>
         <h3 style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.05rem;color:#F0F0F0;margin-bottom:4px;">Iyyanar S</h3>
         <p style="color:#D4C46A;font-size:.82rem;font-weight:600;margin-bottom:18px;">B.E Biomedical Engineering</p>
 
